@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网站</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar glass">
+        <div class="nav-container">
+            <div class="logo">ZGP</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">主页</a></li>
+                <li><a href="#about" class="nav-link">关于</a></li>
+                <li><a href="#projects" class="nav-link">项目</a></li>
+                <li><a href="#skills" class="nav-link">技能</a></li>
+                <li><a href="#contact" class="nav-link">联系</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">
+                <span class="sun">☀️</span>
+                <span class="moon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="glitch-text">你好，我是 <span class="highlight">周光平</span></h1>
+                <p class="subtitle">软件工程师 | 全栈开发者 | 创造者</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary glass">查看作品</a>
+                    <a href="#contact" class="btn btn-secondary glass">联系我</a>
+                </div>
+            </div>
+        </div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <div class="about-card glass">
+                    <div class="card-icon">👨‍💻</div>
+                    <h3>开发者</h3>
+                    <p>热爱编程，专注于创建优雅的解决方案</p>
+                </div>
+                <div class="about-card glass">
+                    <div class="card-icon">🎨</div>
+                    <h3>设计师</h3>
+                    <p>追求美学与功能的完美结合</p>
+                </div>
+                <div class="about-card glass">
+                    <div class="card-icon">🚀</div>
+                    <h3>创新者</h3>
+                    <p>不断探索新技术，突破边界</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">精选项目</h2>
+            <div class="projects-grid">
+                <div class="project-card glass">
+                    <div class="project-header">
+                        <h3>项目名称 1</h3>
+                        <span class="project-tag">Web App</span>
+                    </div>
+                    <p class="project-description">这是一个令人兴奋的项目，展示了现代 Web 开发的最佳实践</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Node.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">查看详情 →</a>
+                    </div>
+                </div>
+                <div class="project-card glass">
+                    <div class="project-header">
+                        <h3>项目名称 2</h3>
+                        <span class="project-tag">Mobile App</span>
+                    </div>
+                    <p class="project-description">创新的移动应用，为用户提供流畅的体验</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">GraphQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">查看详情 →</a>
+                    </div>
+                </div>
+                <div class="project-card glass">
+                    <div class="project-header">
+                        <h3>项目名称 3</h3>
+                        <span class="project-tag">Open Source</span>
+                    </div>
+                    <p class="project-description">开源工具库，帮助开发者提高效率</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">CI/CD</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">查看详情 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">技能专长</h2>
+            <div class="skills-container">
+                <div class="skill-category glass">
+                    <h3>前端开发</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">React / Vue</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">TypeScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CSS / Sass</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3>后端开发</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Database</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">联系我</h2>
+            <div class="contact-content">
+                <div class="contact-info glass">
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <div>
+                            <h4>邮箱</h4>
+                            <p>your.email@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">💼</span>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p>linkedin.com/in/yourprofile</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🐱</span>
+                        <div>
+                            <h4>GitHub</h4>
+                            <p>github.com/yourusername</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🐦</span>
+                        <div>
+                            <h4>Twitter</h4>
+                            <p>@yourhandle</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer glass">
+        <div class="container">
+            <p>&copy; 2024 周光平. 保留所有权利.</p>
+            <p>用 ❤️ 和 ☕ 制作</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
