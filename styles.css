@@ -396,16 +396,7 @@ html {
     border: 1px solid var(--glass-border);
 }
 
-.project-link {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-}
 
-.project-link:hover {
-    color: var(--secondary-color);
-}
 
 .skills-container {
     display: grid;
@@ -480,7 +471,18 @@ html {
 }
 
 .contact-icon {
-    font-size: 30px;
+    font-size: 28px;
+    min-width: 40px;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover .contact-icon {
+    color: var(--secondary-color);
+    transform: scale(1.1);
 }
 
 .contact-item h4 {
