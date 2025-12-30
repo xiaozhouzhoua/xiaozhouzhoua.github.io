@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人网站</title>
+    <title>My Personal Website</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
@@ -11,29 +11,92 @@
 <body>
     <nav class="navbar glass">
         <div class="nav-container">
-            <div class="logo">小周</div>
+            <a href="index.html" class="logo">Xiao Zhou</a>
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">主页</a></li>
-                <li><a href="#about" class="nav-link">关于</a></li>
-                <li><a href="#projects" class="nav-link">项目</a></li>
-                <li><a href="#skills" class="nav-link">技能</a></li>
-                <li><a href="#contact" class="nav-link">联系</a></li>
+                <li><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+                <li><a href="about.html" class="nav-link" data-i18n="nav.about">About</a></li>
+                <li><a href="projects.html" class="nav-link" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="skills.html" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a></li>
             </ul>
-            <button class="theme-toggle" id="themeToggle">
-                <span class="sun">☀️</span>
-                <span class="moon">🌙</span>
-            </button>
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle">中</button>
+                <button class="theme-toggle" id="themeToggle">
+                    <span class="sun">☀️</span>
+                    <span class="moon">🌙</span>
+                </button>
+            </div>
         </div>
     </nav>
 
     <section id="home" class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1 class="glitch-text">你好，我是 <span class="highlight">小周</span></h1>
-                <p class="subtitle">软件工程师 | 全栈开发者 | 创造者</p>
+                <h1 class="glitch-text"><span data-i18n="home.greeting">Hi, I'm</span> <span class="highlight" data-i18n="home.name">Xiao Zhou</span></h1>
+                <p class="subtitle" data-i18n="home.subtitle">Software Engineer | Full Stack Developer | Creator</p>
                 <div class="cta-buttons">
-                    <a href="#projects" class="btn btn-primary glass">查看作品</a>
-                    <a href="#contact" class="btn btn-secondary glass">联系我</a>
+                    <a href="projects.html" class="btn btn-primary glass" data-i18n="home.viewWork">View Work</a>
+                    <a href="contact.html" class="btn btn-secondary glass" data-i18n="home.contactMe">Contact Me</a>
+                </div>
+            </div>
+            <div class="widgets-container">
+                <div class="widget clock-widget glass">
+                    <div class="widget-header">
+                        <i class="fas fa-clock"></i>
+                        <span data-i18n="widgets.clock">Clock</span>
+                    </div>
+                    <div class="clock-content">
+                        <div class="digital-clock" id="digitalClock">
+                            <div class="digit-box glass"><span id="h1">0</span></div>
+                            <div class="digit-box glass"><span id="h2">0</span></div>
+                            <div class="clock-colon">:</div>
+                            <div class="digit-box glass"><span id="m1">0</span></div>
+                            <div class="digit-box glass"><span id="m2">0</span></div>
+                        </div>
+                    </div>
+                    <div class="clock-info" id="clockInfo">
+                        <div class="clock-date" id="clockDate"></div>
+                        <div class="clock-lunar" id="clockLunar"></div>
+                        <div class="clock-fortune" id="clockFortune"></div>
+                    </div>
+                </div>
+                <div class="widget calendar-widget glass">
+                    <div class="widget-header">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span data-i18n="widgets.calendar">Calendar</span>
+                    </div>
+                    <div class="calendar-nav">
+                        <button class="cal-nav-btn" id="prevMonth"><i class="fas fa-chevron-left"></i></button>
+                        <span class="calendar-month" id="calendarMonth"></span>
+                        <button class="cal-nav-btn" id="nextMonth"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="calendar-grid">
+                        <div class="calendar-weekdays" id="calendarWeekdays"></div>
+                        <div class="calendar-days" id="calendarDays"></div>
+                    </div>
+                </div>
+                <div class="widget weather-widget glass">
+                    <div class="widget-header">
+                        <i class="fas fa-cloud-sun"></i>
+                        <span data-i18n="widgets.weather">Weather</span>
+                    </div>
+                    <div class="weather-content" id="weatherContent">
+                        <div class="weather-loading">
+                            <i class="fas fa-spinner fa-spin"></i>
+                            <span data-i18n="widgets.getWeather">Getting weather...</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget quote-widget glass">
+                    <div class="widget-header">
+                        <i class="fas fa-quote-left"></i>
+                        <span data-i18n="widgets.quote">Daily Quote</span>
+                    </div>
+                    <div class="quote-content" id="quoteContent">
+                        <div class="quote-loading">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -44,165 +107,18 @@
         </div>
     </section>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">关于我</h2>
-            <div class="about-content">
-                <div class="about-card glass">
-                    <div class="card-icon">👨‍💻</div>
-                    <h3>开发者</h3>
-                    <p>热爱编程，专注于创建优雅的解决方案</p>
-                </div>
-                <div class="about-card glass">
-                    <div class="card-icon">🎨</div>
-                    <h3>设计师</h3>
-                    <p>追求美学与功能的完美结合</p>
-                </div>
-                <div class="about-card glass">
-                    <div class="card-icon">🚀</div>
-                    <h3>创新者</h3>
-                    <p>不断探索新技术，突破边界</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">精选项目</h2>
-            <div class="projects-grid">
-                <div class="project-card glass">
-                    <div class="project-header">
-                        <h3>StarAI</h3>
-                        <span class="project-tag">Web App</span>
-                    </div>
-                    <p class="project-description">这是一个令人兴奋的项目，展示了现代 Web 开发的最佳实践</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">TypeScript</span>
-                        <span class="tech-tag">Node.js</span>
-                    </div>
-                </div>
-                <div class="project-card glass">
-                    <div class="project-header">
-                        <h3>GetSteps</h3>
-                        <span class="project-tag">Mobile App</span>
-                    </div>
-                    <p class="project-description">创新的移动应用，为用户提供流畅的体验</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Flutter</span>
-                        <span class="tech-tag">Firebase</span>
-                        <span class="tech-tag">GraphQL</span>
-                    </div>
-                </div>
-                <div class="project-card glass">
-                    <div class="project-header">
-                        <h3>DevToolAll</h3>
-                        <span class="project-tag">Open Source</span>
-                    </div>
-                    <p class="project-description">开源工具库，帮助开发者提高效率</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Docker</span>
-                        <span class="tech-tag">CI/CD</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title">技能专长</h2>
-            <div class="skills-container">
-                <div class="skill-category glass">
-                    <h3>前端开发</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span class="skill-name">React / Vue</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Next.js</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Tailwind CSS</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 95%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category glass">
-                    <h3>后端开发</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span class="skill-name">Java</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 88%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Kotlin</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 82%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Database</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">联系我</h2>
-            <div class="contact-content">
-                <div class="contact-info glass">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope contact-icon"></i>
-                        <div>
-                            <h4>邮箱</h4>
-                            <a href="mailto:1445101933@qq.com" class="contact-link">1445101933@qq.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-github contact-icon"></i>
-                        <div>
-                            <h4>GitHub</h4>
-                            <a href="https://github.com/xiaozhouzhoua" target="_blank" rel="noopener noreferrer" class="contact-link">github.com/xiaozhouzhoua</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-x-twitter contact-icon"></i>
-                        <div>
-                            <h4>X (Twitter)</h4>
-                            <a href="https://twitter.com/zhouguangping1" target="_blank" rel="noopener noreferrer" class="contact-link">@zhouguangping1</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <footer class="footer glass">
         <div class="container">
-            <p>&copy; 2025 小周. 保留所有权利.</p>
-            <p>用 ❤️ 和 ☕ 制作</p>
+            <p data-i18n="footer.rights">© 2025 Xiao Zhou. All rights reserved.</p>
+            <p data-i18n="footer.madeWith">Made with ❤️ and ☕</p>
         </div>
     </footer>
 
+    <button class="back-to-top" id="backToTop" data-i18n-title="backToTop" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

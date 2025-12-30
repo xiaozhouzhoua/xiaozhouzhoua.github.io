@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Xiao Zhou</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar glass">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Xiao Zhou</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+                <li><a href="about.html" class="nav-link" data-i18n="nav.about">About</a></li>
+                <li><a href="projects.html" class="nav-link active" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="skills.html" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle">中</button>
+                <button class="theme-toggle" id="themeToggle">
+                    <span class="sun">☀️</span>
+                    <span class="moon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <h1 class="page-title" data-i18n="projects.title">My Projects</h1>
+        <p class="page-subtitle" data-i18n="projects.subtitle">Explore my portfolio</p>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="projects-grid">
+                <div class="project-card glass">
+                    <div class="project-header">
+                        <h3>StarAI</h3>
+                        <span class="project-tag">Web App</span>
+                    </div>
+                    <p class="project-description" data-i18n="projects.staraiDesc">An exciting project showcasing modern web development best practices with the latest tech stack.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Node.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> <span data-i18n="projects.source">Source</span></a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> <span data-i18n="projects.demo">Demo</span></a>
+                    </div>
+                </div>
+                <div class="project-card glass">
+                    <div class="project-header">
+                        <h3>GetSteps</h3>
+                        <span class="project-tag">Mobile App</span>
+                    </div>
+                    <p class="project-description" data-i18n="projects.getstepsDesc">Innovative mobile app providing smooth user experience, focused on health tracking and fitness data analysis.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">GraphQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> <span data-i18n="projects.source">Source</span></a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> <span data-i18n="projects.demo">Demo</span></a>
+                    </div>
+                </div>
+                <div class="project-card glass">
+                    <div class="project-header">
+                        <h3>DevToolAll</h3>
+                        <span class="project-tag">Open Source</span>
+                    </div>
+                    <p class="project-description" data-i18n="projects.devtoolallDesc">Open source toolkit helping developers improve efficiency with various utilities and automation scripts.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">CI/CD</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> <span data-i18n="projects.source">Source</span></a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> <span data-i18n="projects.demo">Demo</span></a>
+                    </div>
+                </div>
+                <div class="project-card glass">
+                    <div class="project-header">
+                        <h3>CloudSync</h3>
+                        <span class="project-tag">SaaS</span>
+                    </div>
+                    <p class="project-description" data-i18n="projects.cloudsyncDesc">Cloud sync service supporting multi-platform data synchronization and backup for data security.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Go</span>
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">Redis</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> <span data-i18n="projects.source">Source</span></a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> <span data-i18n="projects.demo">Demo</span></a>
+                    </div>
+                </div>
+                <div class="project-card glass">
+                    <div class="project-header">
+                        <h3>SmartHome</h3>
+                        <span class="project-tag">IoT</span>
+                    </div>
+                    <p class="project-description" data-i18n="projects.smarthomeDesc">Smart home control system supporting multiple device connections and automation scenarios.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Rust</span>
+                        <span class="tech-tag">MQTT</span>
+                        <span class="tech-tag">Vue.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> <span data-i18n="projects.source">Source</span></a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> <span data-i18n="projects.demo">Demo</span></a>
+                    </div>
+                </div>
+                <div class="project-card glass">
+                    <div class="project-header">
+                        <h3>CodeReview</h3>
+                        <span class="project-tag">Tool</span>
+                    </div>
+                    <p class="project-description" data-i18n="projects.codereviewDesc">AI-powered code review tool that automatically detects issues and provides improvement suggestions.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">OpenAI</span>
+                        <span class="tech-tag">FastAPI</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> <span data-i18n="projects.source">Source</span></a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> <span data-i18n="projects.demo">Demo</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer glass">
+        <div class="container">
+            <p data-i18n="footer.rights">© 2025 Xiao Zhou. All rights reserved.</p>
+            <p data-i18n="footer.madeWith">Made with ❤️ and ☕</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" data-i18n-title="backToTop" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

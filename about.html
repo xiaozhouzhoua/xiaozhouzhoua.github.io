@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Xiao Zhou</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar glass">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Xiao Zhou</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+                <li><a href="about.html" class="nav-link active" data-i18n="nav.about">About</a></li>
+                <li><a href="projects.html" class="nav-link" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="skills.html" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle">中</button>
+                <button class="theme-toggle" id="themeToggle">
+                    <span class="sun">☀️</span>
+                    <span class="moon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <h1 class="page-title" data-i18n="about.title">About Me</h1>
+        <p class="page-subtitle" data-i18n="about.subtitle">Learn more about my story</p>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="about-detail glass">
+                <div class="about-intro">
+                    <div class="avatar-large">👨‍💻</div>
+                    <div class="intro-text">
+                        <h2 data-i18n="about.hello">Hello, I'm Xiao Zhou</h2>
+                        <p data-i18n="about.intro">A passionate full-stack developer focused on creating elegant and efficient solutions. I believe good code should not only work but also be easy to understand and maintain.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-content" style="margin-top: 40px;">
+                <div class="about-card glass">
+                    <div class="card-icon">👨‍💻</div>
+                    <h3 data-i18n="about.developer">Developer</h3>
+                    <p data-i18n="about.developerDesc">Passionate about programming, focused on creating elegant solutions. Years of development experience with full-stack expertise.</p>
+                </div>
+                <div class="about-card glass">
+                    <div class="card-icon">🎨</div>
+                    <h3 data-i18n="about.designer">Designer</h3>
+                    <p data-i18n="about.designerDesc">Pursuing the perfect combination of aesthetics and functionality. Focused on user experience, presenting complex features simply.</p>
+                </div>
+                <div class="about-card glass">
+                    <div class="card-icon">🚀</div>
+                    <h3 data-i18n="about.innovator">Innovator</h3>
+                    <p data-i18n="about.innovatorDesc">Constantly exploring new technologies, pushing boundaries. Maintaining passion for learning, embracing change, pursuing excellence.</p>
+                </div>
+            </div>
+
+            <div class="timeline glass" style="margin-top: 60px; padding: 40px; border-radius: 30px;">
+                <h2 style="text-align: center; margin-bottom: 40px; background: var(--gradient-1); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;" data-i18n="about.journey">My Journey</h2>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4 data-i18n="about.journeyStart">Started Programming</h4>
+                        <p data-i18n="about.journeyStartDesc">Discovered programming and was captivated by the magic of code, began self-learning various languages.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4 data-i18n="about.journeyFullstack">Deep into Full Stack</h4>
+                        <p data-i18n="about.journeyFullstackDesc">Systematically learned front-end and back-end technologies, participated in multiple real projects.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4 data-i18n="about.journeyGrowth">Continuous Growth</h4>
+                        <p data-i18n="about.journeyGrowthDesc">Constantly learning new technologies, sharing knowledge, contributing to the open source community.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer glass">
+        <div class="container">
+            <p data-i18n="footer.rights">© 2025 Xiao Zhou. All rights reserved.</p>
+            <p data-i18n="footer.madeWith">Made with ❤️ and ☕</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" data-i18n-title="backToTop" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
