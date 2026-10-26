@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tick 隐私政策 · Tick Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Helvetica Neue", sans-serif;
+    max-width: 760px; margin: 0 auto; padding: 32px 20px 64px;
+    line-height: 1.75; color: #1d1d1f; background: #fff;
+  }
+  h1 { font-size: 1.6rem; margin-bottom: 4px; }
+  h2 { font-size: 1.15rem; margin-top: 2em; }
+  p.updated { color: #86868b; font-size: .9rem; margin-top: 0; }
+  a { color: #0066cc; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; background: #1d1d1f; }
+    a { color: #4aa3ff; }
+  }
+</style>
+</head>
+<body>
+<h1>Tick 隐私政策</h1>
+<p class="updated">最近更新：2026-10-25 · 适用范围：Tick for Mac / iOS（App Store 版本）</p>
+
+<p>Tick 是一款本地优先的市场行情自选应用。我们不运营账户系统，不出售数据，也不嵌入任何广告或第三方跟踪 SDK。</p>
+
+<h2>我们收集哪些数据</h2>
+<p>无。Tick 不收集、不上传任何个人数据，也没有接入任何分析或统计服务。</p>
+
+<h2>存储在你设备上的数据</h2>
+<p>自选列表、持仓、交易记录和应用设置仅保存在你设备上的应用容器中。如果你连接自己的长桥（Longbridge）账户，授权凭据只保存在 macOS 钥匙串 / iOS 钥匙串中，且仅用于向长桥 OpenAPI 发起你主动发起的行情请求。</p>
+
+<h2>网络请求</h2>
+<p>为获取行情，Tick 会直接向你所用市场对应的数据源发起请求（例如东方财富、腾讯、新浪、Yahoo、Naver、Binance、长桥 OpenAPI）。这些请求会像任何普通网络请求一样携带你的 IP 地址等基本网络信息，但请求内容仅限于公开市场数据，不包含你的自选列表之外的任何个人信息。数据源由应用按市场自动路由，你可以随时在设置中查看数据源状态。</p>
+
+<h2>本地 MCP 服务（可选，默认关闭）</h2>
+<p>Tick 提供可选的 Model Context Protocol（MCP）本地服务，供 Claude、ChatGPT 等 MCP 客户端读写自选与持仓。该服务仅监听 127.0.0.1 回环地址，需使用保存在钥匙串中的访问令牌鉴权，默认关闭，仅在你显式开启后运行，不会经由任何外部服务器中转。</p>
+
+<h2>第三方服务边界</h2>
+<p>长桥账户的浏览器授权流程由长桥官方页面完成，Tick 不经手你的长桥登录密码。除上述行情数据源与可选的长桥授权外，应用不向任何第三方发送数据。</p>
+
+<h2>数据删除</h2>
+<p>所有数据都在你的设备上。删除应用即删除全部本地数据（含自选、持仓与钥匙串凭据的访问）。</p>
+
+<h2>儿童</h2>
+<p>Tick 不面向 13 岁以下儿童，也不收集儿童信息。</p>
+
+<h2>联系我们</h2>
+<p>对本政策有疑问，可通过 App Store 页面 listed 的支持渠道联系开发者。</p>
+
+<hr style="margin:3em 0 2em">
+
+<h1>Tick Privacy Policy</h1>
+<p class="updated">Last updated: 2026-10-25 · Applies to Tick for Mac / iOS (App Store builds)</p>
+
+<p>Tick is a local-first market watchlist app. We operate no account system, sell no data, and embed no advertising or third-party tracking SDKs.</p>
+
+<h2>Data we collect</h2>
+<p>None. Tick collects and uploads no personal data and integrates no analytics services.</p>
+
+<h2>Data stored on your device</h2>
+<p>Watchlists, positions, trades, and settings stay inside the app container on your device. If you connect your own Longbridge account, its credentials are stored only in the macOS / iOS Keychain and used solely for market-data requests you initiate against Longbridge OpenAPI.</p>
+
+<h2>Network requests</h2>
+<p>To fetch quotes, Tick talks directly to the data source serving each market (e.g. Eastmoney, Tencent, Sina, Yahoo, Naver, Binance, Longbridge OpenAPI). Like any network request these carry basic network information such as your IP address, but the payload is limited to public market data and never includes personal information beyond the symbols you watch. Provider routing is visible in Settings at any time.</p>
+
+<h2>Optional local MCP server (off by default)</h2>
+<p>Tick can expose an opt-in Model Context Protocol (MCP) endpoint for clients such as Claude or ChatGPT to read and edit watchlists and positions. It binds to 127.0.0.1 only, requires a Keychain-stored bearer token, runs only when you explicitly enable it, and relays through no external server.</p>
+
+<h2>Third-party boundaries</h2>
+<p>Longbridge account authorization happens on Longbridge's own page; Tick never sees your Longbridge password. Beyond the market-data sources above, the app sends nothing to third parties.</p>
+
+<h2>Deleting your data</h2>
+<p>Everything lives on your device. Deleting the app removes all local data, including access to Keychain credentials.</p>
+
+<h2>Children</h2>
+<p>Tick is not directed at children under 13 and collects no children's data.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy can be sent through the support channel listed on the App Store page.</p>
+</body>
+</html>
