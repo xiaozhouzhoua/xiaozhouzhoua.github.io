@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tick 行情 · 使用支持</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Helvetica Neue", sans-serif;
+    max-width: 760px; margin: 0 auto; padding: 32px 20px 64px;
+    line-height: 1.75; color: #1d1d1f; background: #fff;
+  }
+  h1 { font-size: 1.6rem; margin-bottom: 4px; }
+  h2 { font-size: 1.1rem; margin-top: 2em; }
+  a { color: #0066cc; }
+  nav a { margin-right: 16px; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; background: #1d1d1f; }
+    a { color: #4aa3ff; }
+  }
+</style>
+</head>
+<body>
+<nav><a href="./support.html">使用帮助</a> <a href="./privacy.html">隐私政策</a></nav>
+<h1>Tick 行情 · 使用支持</h1>
+
+<h2>支持哪些市场？</h2>
+<p>美股、港股、A股、日股、韩股、加密货币（币安现货）、贵金属（伦敦现货、COMEX/NYMEX、上金所、沪金沪银）、主要指数与 ETF。</p>
+
+<h2>数据来源是什么？实时还是延时？</h2>
+<p>Tick 按市场自动路由到可用数据源（东方财富、腾讯、新浪、Yahoo、Naver、币安等）。A 股与加密货币为实时行情；港股、美股默认延时，日股延时约 20 分钟，韩股实时。行情详情页会标注数据来源与实时/延时状态。</p>
+
+<h2>如何获得港股/美股/A 股的官方实时行情？</h2>
+<p>设置 → 数据源 → Longbridge，用你自己的长桥账户完成浏览器授权（或填入 API Key）即可升级为官方实时行情（长桥账户需开通相应行情权限）。凭据只保存在你 Mac 的钥匙串中。</p>
+
+<h2>我的自选和持仓数据存在哪里？</h2>
+<p>全部保存在本机应用容器中，不上传任何服务器。删除应用即删除全部数据。</p>
+
+<h2>MCP 是什么？会不会有安全风险？</h2>
+<p>MCP 是让 Claude、ChatGPT 等 AI 客户端直接读写自选/持仓的本地接口，默认关闭。开启后只监听 127.0.0.1，且需要设置页显示的访问令牌，不会暴露到网络。</p>
+
+<h2>联系支持</h2>
+<p>问题反馈或建议请发邮件到 <a href="mailto:1445101933@qq.com">1445101933@qq.com</a>，我们会尽快回复。</p>
+</body>
+</html>
